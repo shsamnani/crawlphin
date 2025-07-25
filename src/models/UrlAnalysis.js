@@ -23,6 +23,13 @@ const UrlAnalysisSchema = new mongoose.Schema({
     {
       link: String,
       statusCode: Number,
+      errorMessage: String,
+    },
+  ],
+  workingLinks: [
+    {
+      link: String,
+      statusCode: Number,
     },
   ],
   hasLoginForm: { type: Boolean, default: false },
